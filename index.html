@@ -1391,6 +1391,17 @@
             });
         });
 
+        // Make entire project cards clickable
+        document.querySelectorAll('.project-card').forEach(card => {
+            const mainLink = card.querySelector('a[target="_blank"]');
+            if (!mainLink) return;
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', function(e) {
+                if (e.target.closest('a')) return;
+                window.open(mainLink.href, '_blank');
+            });
+        });
+
         // Animate stats counter
         const animateStats = () => {
             const stats = document.querySelectorAll('.stat-number');
