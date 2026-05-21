@@ -194,6 +194,16 @@
             color: #333;
         }
 
+        #stars {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            pointer-events: none;
+        }
+
         @media (max-width: 600px) {
             header {
                 padding: 40px 0 32px;
@@ -205,6 +215,7 @@
     </style>
 </head>
 <body>
+    <canvas id="stars"></canvas>
     <div class="container">
         <header>
             <h1>Edward Mathew</h1>
@@ -306,6 +317,8 @@
                 <span>Git</span>
                 <span>Solidity</span>
                 <span>Web3.js</span>
+                <span>Web Design</span>
+                <span>UI/UX</span>
                 <span>Tailwind CSS</span>
                 <span>HTML/CSS</span>
             </div>
@@ -340,5 +353,43 @@
             &copy; 2025 Edward Mathew
         </footer>
     </div>
+    <script>
+        const canvas = document.getElementById('stars');
+        const ctx = canvas.getContext('2d');
+        let width, height;
+        const stars = [];
+
+        function init() {
+            width = canvas.width = window.innerWidth;
+            height = canvas.height = window.innerHeight;
+            stars.length = 0;
+            for (let i = 0; i < 180; i++) {
+                stars.push({
+                    x: Math.random() * width,
+                    y: Math.random() * height,
+                    size: Math.random() * 1.0 + 0.3,
+                    alpha: Math.random() * Math.PI * 2,
+                    speed: Math.random() * 0.015 + 0.003
+                });
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, width, height);
+            stars.forEach(star => {
+                star.alpha += star.speed;
+                const opacity = Math.abs(Math.sin(star.alpha)) * 0.5 + 0.05;
+                ctx.fillStyle = `rgba(220, 220, 220, ${opacity})`;
+                ctx.beginPath();
+                ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
+                ctx.fill();
+            });
+            requestAnimationFrame(animate);
+        }
+
+        init();
+        animate();
+        window.addEventListener('resize', init);
+    </script>
 </body>
 </html>
