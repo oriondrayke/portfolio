@@ -1,395 +1,45 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edward Mathew</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            background: #0a0a0a;
-            color: #a0a0a0;
-            line-height: 1.6;
-            font-size: 15px;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .container {
-            max-width: 680px;
-            margin: 0 auto;
-            padding: 0 24px;
-        }
-
-        a {
-            color: #d0d0d0;
-            text-decoration: none;
-            border-bottom: 1px solid #333;
-            transition: border-color 0.2s;
-        }
-
-        a:hover {
-            border-bottom-color: #d0d0d0;
-        }
-
-        header {
-            padding: 64px 0 40px;
-            border-bottom: 1px solid #1a1a1a;
-        }
-
-        header h1 {
-            font-size: 20px;
-            font-weight: 600;
-            color: #e5e5e5;
-            letter-spacing: -0.3px;
-        }
-
-        header nav {
-            margin-top: 20px;
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        header nav a {
-            font-size: 14px;
-            color: #666;
-            border: none;
-        }
-
-        header nav a:hover {
-            color: #e5e5e5;
-        }
-
-        section {
-            padding: 48px 0;
-            border-bottom: 1px solid #1a1a1a;
-        }
-
-        h2 {
-            font-size: 12px;
-            font-weight: 600;
-            color: #e5e5e5;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            margin-bottom: 28px;
-        }
-
-        .intro {
-            font-size: 17px;
-            line-height: 1.6;
-            color: #d0d0d0;
-            max-width: 560px;
-        }
-
-        .project {
-            margin-bottom: 36px;
-        }
-
-        .project:last-child {
-            margin-bottom: 0;
-        }
-
-        .project-title {
-            font-size: 15px;
-            font-weight: 600;
-            color: #e5e5e5;
-            margin-bottom: 6px;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .project-title a {
-            border: none;
-            color: #e5e5e5;
-        }
-
-        .project-title a:hover {
-            color: #fff;
-        }
-
-        .project-title .arrow {
-            color: #444;
-            font-size: 13px;
-            font-weight: 400;
-        }
-
-        .project p {
-            color: #888;
-            margin-bottom: 10px;
-            max-width: 560px;
-        }
-
-        .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .tags span {
-            font-size: 12px;
-            color: #555;
-            background: #111;
-            padding: 3px 10px;
-            border-radius: 3px;
-            border: 1px solid #1a1a1a;
-        }
-
-        .skill-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-
-        .skill-grid span {
-            font-size: 13px;
-            color: #777;
-            background: #111;
-            padding: 4px 12px;
-            border-radius: 3px;
-            border: 1px solid #1a1a1a;
-        }
-
-        .edu-item {
-            margin-bottom: 20px;
-        }
-
-        .edu-item h3 {
-            font-size: 14px;
-            font-weight: 600;
-            color: #d0d0d0;
-            margin-bottom: 2px;
-        }
-
-        .edu-item p {
-            font-size: 13px;
-            color: #555;
-        }
-
-        .contact-links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 16px;
-        }
-
-        .contact-links a {
-            font-size: 14px;
-            color: #888;
-            border: none;
-        }
-
-        .contact-links a:hover {
-            color: #e5e5e5;
-        }
-
-        footer {
-            padding: 32px 0 64px;
-            font-size: 13px;
-            color: #333;
-        }
-
-        #stars {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            pointer-events: none;
-        }
-
-        @media (max-width: 600px) {
-            header {
-                padding: 40px 0 32px;
-            }
-            section {
-                padding: 36px 0;
-            }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Edward Mathew Mkingule — independent full-stack developer and digital product builder in Tanzania.">
+  <title>Edward Mathew Mkingule — Product Builder</title>
+  <style>
+    :root{--ink:#17211b;--paper:#f4f0e7;--lime:#d9ff62;--orange:#ff7040;--line:rgba(23,33,27,.16);--muted:#5c675f}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit}.wrap{width:min(1180px,calc(100% - 36px));margin:auto}.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line)}.mark{font-weight:900;letter-spacing:-.04em}.navlinks{display:flex;gap:22px}.navlinks a{text-decoration:none;font-size:.85rem;font-weight:700}.hero{padding:85px 0 64px;display:grid;grid-template-columns:1.5fr .7fr;gap:50px;align-items:end}.eyebrow,.label{text-transform:uppercase;letter-spacing:.13em;font-size:.72rem;font-weight:900}.eyebrow{display:inline-block;background:var(--lime);padding:8px 12px;border:1px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}h1{font-size:clamp(3.5rem,9vw,8.6rem);line-height:.84;letter-spacing:-.075em;margin:32px 0 26px;max-width:980px}.hero p{font-size:clamp(1.1rem,2vw,1.45rem);max-width:740px;margin:0}.side{border-left:1px solid var(--line);padding-left:28px}.side p{font-size:.93rem;color:var(--muted)}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-block;padding:12px 17px;border:1px solid var(--ink);text-decoration:none;font-weight:850;font-size:.9rem}.btn.primary{background:var(--ink);color:white}.btn:hover{background:var(--orange);color:var(--ink)}section{padding:74px 0;border-top:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:35px}.section-head h2{font-size:clamp(2.2rem,5vw,4.8rem);line-height:.95;letter-spacing:-.055em;margin:8px 0}.section-head p{max-width:440px;color:var(--muted)}.projects{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.card{grid-column:span 6;min-height:340px;border:1px solid var(--ink);padding:28px;display:flex;flex-direction:column;justify-content:space-between;text-decoration:none;position:relative;overflow:hidden;transition:.18s}.card:nth-child(3n){grid-column:span 7}.card:nth-child(3n+1):not(:first-child){grid-column:span 5}.card:hover{transform:translateY(-5px);box-shadow:8px 8px 0 var(--ink)}.card.dark{background:var(--ink);color:white}.card.lime{background:var(--lime)}.card.orange{background:var(--orange)}.num{font-size:.75rem;font-weight:900}.card h3{font-size:clamp(2rem,4vw,4rem);letter-spacing:-.06em;line-height:.92;margin:35px 0 18px}.card p{max-width:560px;margin:0;opacity:.78}.meta{display:flex;justify-content:space-between;gap:20px;margin-top:36px;font-size:.76rem;text-transform:uppercase;letter-spacing:.08em;font-weight:850}.services{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--ink)}.service{padding:28px;min-height:220px;border-right:1px solid var(--ink)}.service:last-child{border:0}.service h3{font-size:1.4rem;margin:15px 0}.service p{color:var(--muted)}.process{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--ink)}.step{padding:24px 24px 24px 0;border-right:1px solid var(--line)}.step:not(:first-child){padding-left:24px}.step b{font-size:2rem}.step p{color:var(--muted);font-size:.9rem}.contact{background:var(--ink);color:white;padding:68px;margin-bottom:25px}.contact h2{font-size:clamp(2.8rem,7vw,7rem);line-height:.9;letter-spacing:-.065em;margin:12px 0 30px;max-width:850px}.contact p{max-width:620px;color:#bdc7c0}.contact .btn{border-color:white}.footer{display:flex;justify-content:space-between;padding:20px 0 38px;font-size:.8rem;color:var(--muted)}
+    @media(max-width:760px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding-top:55px}.side{border-left:0;border-top:1px solid var(--line);padding:22px 0 0}.section-head{display:block}.card,.card:nth-child(3n),.card:nth-child(3n+1):not(:first-child){grid-column:span 12;min-height:310px}.services,.process{grid-template-columns:1fr}.service{border-right:0;border-bottom:1px solid var(--ink)}.step,.step:not(:first-child){padding:22px 0;border-right:0;border-bottom:1px solid var(--line)}.contact{padding:38px 24px}.footer{display:block}}
+  </style>
 </head>
 <body>
-    <canvas id="stars"></canvas>
-    <div class="container">
-        <header>
-            <h1>Edward Mathew</h1>
-            <nav>
-                <a href="#projects">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#education">Education</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
+  <main class="wrap">
+    <nav class="nav"><div class="mark">EDWARD / BUILDS</div><div class="navlinks"><a href="#work">Selected work</a><a href="#services">Services</a><a href="#contact">Start a project</a></div></nav>
+    <header class="hero">
+      <div><span class="eyebrow">Independent developer · Dar es Salaam</span><h1>I turn ideas into working digital products.</h1><p>I design, build and deploy fast websites, web applications and practical automation—from the first sketch to a product people can actually use.</p></div>
+      <aside class="side"><span class="label">Available worldwide</span><p>Working remotely with founders, businesses and organisations. Clear milestones, direct communication and one accountable builder.</p><div class="actions"><a class="btn primary" href="mailto:emathews924@gmail.com">Email me</a><a class="btn" href="https://wa.me/255682087992">WhatsApp</a></div></aside>
+    </header>
 
-        <section>
-            <p class="intro">I build tools that solve problems I actually have. Most of them run on cheap servers and stay online without babysitting.</p>
-        </section>
+    <section id="work">
+      <div class="section-head"><div><span class="label">Proof, not promises</span><h2>Selected work</h2></div><p>Live products, working repositories and client-specific design explorations spanning commerce, security, hospitality and public-interest information.</p></div>
+      <div class="projects">
+        <a class="card dark" href="https://atlasdigitalvault.app" target="_blank" rel="noreferrer"><span class="num">01 · LIVE PRODUCT</span><div><h3>Atlas Digital Vault</h3><p>A web and Android document-security product with client-side encryption, organisation, reminders, secure sharing, multilingual access and subscriptions.</p></div><div class="meta"><span>Product · Security · Mobile</span><span>Visit ↗</span></div></a>
+        <a class="card lime" href="https://dukaos.com" target="_blank" rel="noreferrer"><span class="num">02 · LIVE PRODUCT</span><div><h3>DukaOS</h3><p>A bilingual retail operating system covering sales, inventory, expenses, debts, roles, branches, ecommerce, reporting and offline-friendly workflows.</p></div><div class="meta"><span>SaaS · Commerce · Operations</span><span>Visit ↗</span></div></a>
+        <a class="card" href="https://oriondrayke.github.io/korvia/proposals/timespan-views/" target="_blank" rel="noreferrer"><span class="num">03 · DESIGN EXPLORATION</span><div><h3>Timespan Views</h3><p>Fifteen genuinely different digital directions for an arts organisation, showing how structure, identity, accessibility, ticketing and donations can work together.</p></div><div class="meta"><span>UX · Accessibility · Concepts</span><span>Explore ↗</span></div></a>
+        <a class="card orange" href="https://oriondrayke.github.io/vinoandviews-ui-lab/" target="_blank" rel="noreferrer"><span class="num">04 · UI LAB</span><div><h3>Vino &amp; Views</h3><p>Forty interface directions built as an interactive browser environment—evidence of visual range beyond changing colours on one template.</p></div><div class="meta"><span>Hospitality · UI systems</span><span>Explore ↗</span></div></a>
+        <a class="card lime" href="https://oriondrayke.github.io/korvia/proposals/ocfp-resource-hub/" target="_blank" rel="noreferrer"><span class="num">05 · WORKING PROTOTYPE</span><div><h3>Resource Hub</h3><p>An accessible information architecture prototype with search, filters, audience views, content governance and high-contrast behaviour.</p></div><div class="meta"><span>Search · Content · Accessibility</span><span>Try it ↗</span></div></a>
+        <a class="card dark" href="https://github.com/oriondrayke/Litagatoro" target="_blank" rel="noreferrer"><span class="num">06 · OPEN REPOSITORY</span><div><h3>Litagatoro</h3><p>A human-in-the-loop voice oracle for AI agents using Solidity escrow contracts, a Python SDK and MCP integration.</p></div><div class="meta"><span>Python · Solidity · AI agents</span><span>GitHub ↗</span></div></a>
+      </div>
+    </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
+    <section id="services">
+      <div class="section-head"><div><span class="label">What I can deliver</span><h2>From simple to serious.</h2></div><p>A small business site does not need enterprise theatre. A complex application does need careful architecture. I match the solution to the problem.</p></div>
+      <div class="services"><article class="service"><span class="num">01</span><h3>Websites that sell clearly</h3><p>Business sites, portfolios, landing pages, online stores, booking, multilingual content, SEO foundations and modern redesigns.</p></article><article class="service"><span class="num">02</span><h3>Web applications</h3><p>Dashboards, membership systems, marketplaces, internal tools, payment flows, databases and role-based administration.</p></article><article class="service"><span class="num">03</span><h3>Automation &amp; AI</h3><p>API integrations, email workflows, monitoring, reporting, document processing, assistants and human-approved AI systems.</p></article></div>
+    </section>
 
-            <div class="project">
-                <div class="project-title">
-                    <a href="https://fixmydigital.life" target="_blank">fixmydigital.life</a>
-                    <span class="arrow">&nearr;</span>
-                </div>
-                <p>Digital services marketplace. 184 pay-per-use services across 17 crews. Built on Node.js + Express, runs on a VPS with PM2 and Nginx.</p>
-                <div class="tags">
-                    <span>Node.js</span>
-                    <span>Express</span>
-                    <span>PostgreSQL</span>
-                    <span>PM2</span>
-                    <span>Nginx</span>
-                </div>
-            </div>
+    <section><div class="section-head"><div><span class="label">A visible process</span><h2>No mystery build.</h2></div></div><div class="process"><div class="step"><b>01</b><h3>Understand</h3><p>Goals, users, content, constraints and the real business problem.</p></div><div class="step"><b>02</b><h3>Present</h3><p>A visual direction and structure you can judge before deep development.</p></div><div class="step"><b>03</b><h3>Build</h3><p>Responsive implementation, integrations, testing and regular demonstrations.</p></div><div class="step"><b>04</b><h3>Launch</h3><p>Deployment, ownership handover, documentation and continued support if needed.</p></div></div></section>
 
-            <div class="project">
-                <div class="project-title">
-                    <a href="https://github.com/oriondrayke/hudumayangu" target="_blank">Huduma Yangu</a>
-                    <span class="arrow">&nearr;</span>
-                </div>
-                <p>Restaurant PWA with QR menus, real-time orders, and admin dashboards. Built because local businesses here still run on paper.</p>
-                <div class="tags">
-                    <span>Next.js</span>
-                    <span>React</span>
-                    <span>PostgreSQL</span>
-                    <span>Docker</span>
-                    <span>Prisma</span>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">
-                    <a href="https://github.com/oriondrayke/Litagatoro" target="_blank">Litagatoro</a>
-                    <span class="arrow">&nearr;</span>
-                </div>
-                <p>Voice oracle for AI agents. Solidity escrow contracts, Python SDK, MCP server integration. AI pays humans for voice work.</p>
-                <div class="tags">
-                    <span>Solidity</span>
-                    <span>Python</span>
-                    <span>Web3</span>
-                    <span>MCP</span>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">Onorius</div>
-                <p>Telegram bot for business automation. Handles state management, payment workflows, and CRM integration.</p>
-                <div class="tags">
-                    <span>Python</span>
-                    <span>SQLite</span>
-                    <span>Telegram API</span>
-                </div>
-            </div>
-
-            <div class="project">
-                <div class="project-title">Clara</div>
-                <p>Trading infrastructure with cross-chain logic and automated liquidation. Private project, production use.</p>
-                <div class="tags">
-                    <span>Python</span>
-                    <span>Blockchain</span>
-                    <span>DeFi</span>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills">
-            <h2>Skills</h2>
-            <div class="skill-grid">
-                <span>JavaScript</span>
-                <span>TypeScript</span>
-                <span>Node.js</span>
-                <span>Next.js</span>
-                <span>React</span>
-                <span>Python</span>
-                <span>PostgreSQL</span>
-                <span>SQLite</span>
-                <span>Prisma</span>
-                <span>Docker</span>
-                <span>Nginx</span>
-                <span>Linux</span>
-                <span>Git</span>
-                <span>Solidity</span>
-                <span>Web3.js</span>
-                <span>Web Design</span>
-                <span>UI/UX</span>
-                <span>Tailwind CSS</span>
-                <span>HTML/CSS</span>
-            </div>
-        </section>
-
-        <section id="education">
-            <h2>Education</h2>
-            <div class="edu-item">
-                <h3>Tambov State University</h3>
-                <p>Russian Language Certificate &mdash; Tambov, Russia, Dec 2019 &ndash; Jun 2020</p>
-            </div>
-            <div class="edu-item">
-                <h3>Marian Boys High School</h3>
-                <p>ACSEE &mdash; Dar es Salaam, Tanzania, Mar 2017 &ndash; Feb 2019</p>
-            </div>
-            <div class="edu-item">
-                <h3>St. Joseph's High School</h3>
-                <p>CSEE &mdash; Dar es Salaam, Tanzania, Jan 2013 &ndash; Oct 2016</p>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <div class="contact-links">
-                <a href="https://github.com/oriondrayke" target="_blank">GitHub</a>
-                <a href="mailto:emathews924@gmail.com">Email</a>
-                <a href="https://wa.me/255682087992" target="_blank">WhatsApp</a>
-            </div>
-        </section>
-
-        <footer>
-            &copy; 2025 Edward Mathew
-        </footer>
-    </div>
-    <script>
-        const canvas = document.getElementById('stars');
-        const ctx = canvas.getContext('2d');
-        let width, height;
-        const stars = [];
-
-        function init() {
-            width = canvas.width = window.innerWidth;
-            height = canvas.height = window.innerHeight;
-            stars.length = 0;
-            for (let i = 0; i < 180; i++) {
-                stars.push({
-                    x: Math.random() * width,
-                    y: Math.random() * height,
-                    size: Math.random() * 1.0 + 0.3,
-                    alpha: Math.random() * Math.PI * 2,
-                    speed: Math.random() * 0.015 + 0.003
-                });
-            }
-        }
-
-        function animate() {
-            ctx.clearRect(0, 0, width, height);
-            stars.forEach(star => {
-                star.alpha += star.speed;
-                const opacity = Math.abs(Math.sin(star.alpha)) * 0.5 + 0.05;
-                ctx.fillStyle = `rgba(220, 220, 220, ${opacity})`;
-                ctx.beginPath();
-                ctx.arc(star.x, star.y, star.size, 0, Math.PI * 2);
-                ctx.fill();
-            });
-            requestAnimationFrame(animate);
-        }
-
-        init();
-        animate();
-        window.addEventListener('resize', init);
-    </script>
+    <section id="contact" class="contact"><span class="label">Have something to build?</span><h2>Tell me the problem. I’ll help shape the product.</h2><p>Available for focused website projects, ongoing development partnerships and products starting from zero.</p><div class="actions"><a class="btn" href="mailto:emathews924@gmail.com">emathews924@gmail.com</a><a class="btn" href="https://wa.me/255682087992">WhatsApp +255 682 087 992</a><a class="btn" href="https://github.com/oriondrayke">GitHub</a></div></section>
+    <footer class="footer"><span>Edward Mathew Mkingule · Independent full-stack developer</span><span>Dar es Salaam, Tanzania · 2026</span></footer>
+  </main>
 </body>
 </html>
