@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Edward Mathew | Kiswahili Translation Proposal — Full Review</title>
+<style>
+  :root { --ink:#172923; --muted:#60736b; --green:#12523f; --mint:#dbece2; --paper:#fffefb; --sand:#f7f2e9; --line:#cadbd0; }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; color:var(--ink); background:#e8eee8; font:15px/1.62 Arial,Helvetica,sans-serif; }
+  .topbar { position:sticky; top:0; z-index:5; background:#153e34; color:#fff; padding:11px max(18px,calc((100vw - 880px)/2)); display:flex; align-items:center; justify-content:space-between; gap:16px; box-shadow:0 3px 15px #163b2d33; }
+  .topbar strong { font-size:13px; letter-spacing:.03em; }
+  .topbar a { color:#fff; font-size:12px; text-decoration:none; border:1px solid #ffffff77; border-radius:50px; padding:5px 11px; white-space:nowrap; }
+  .wrap { max-width:880px; margin:26px auto 60px; padding:0 16px; }
+  .sheet { position:relative; background:var(--paper); min-height:970px; padding:57px 65px 49px; margin:0 0 22px; box-shadow:0 12px 34px #1738281c; overflow:hidden; }
+  .sheet:before { content:""; position:absolute; top:0; left:0; right:0; height:8px; background:linear-gradient(90deg,var(--green),#699b77,#cbab75); }
+  .folio { position:absolute; right:65px; bottom:32px; color:#83948b; font-size:11px; }
+  .kicker { color:var(--green); font-size:11px; letter-spacing:.17em; font-weight:700; text-transform:uppercase; }
+  h1 { font-size:49px; line-height:1.07; letter-spacing:-.045em; margin:30px 0 25px; max-width:670px; }
+  h2 { font-size:25px; line-height:1.19; letter-spacing:-.025em; margin:0 0 20px; }
+  h3 { font-size:15px; margin:24px 0 7px; color:var(--green); }
+  p { margin:0 0 14px; }
+  .lede { color:#3f5d50; font-size:19px; line-height:1.5; }
+  .rule { height:1px; background:var(--line); margin:28px 0; }
+  .badge { display:inline-block; padding:7px 12px; background:#fff1d8; color:#765423; border-left:3px solid #b9893a; font-size:11px; font-weight:bold; }
+  .identity { display:flex; justify-content:space-between; gap:20px; margin-top:38px; padding-top:20px; border-top:2px solid var(--green); }
+  .identity strong { display:block; font-size:19px; }
+  .identity span { color:var(--muted); font-size:12px; }
+  .address { color:var(--muted); font-size:12px; margin-bottom:23px; }
+  .callout { background:var(--sand); padding:16px 20px; border-left:3px solid #ba9a65; margin:24px 0; }
+  .callout p:last-child { margin-bottom:0; }
+  .split { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+  .fact { padding:15px 16px; border:1px solid var(--line); background:#f9fbf7; }
+  .fact small { display:block; color:var(--green); text-transform:uppercase; letter-spacing:.08em; font-size:10px; font-weight:bold; margin-bottom:6px; }
+  .fact strong { font-size:15px; }
+  table { width:100%; border-collapse:collapse; margin:17px 0; }
+  th { background:var(--green); color:#fff; text-align:left; padding:13px 14px; font-size:12px; }
+  td { border-bottom:1px solid var(--line); padding:16px 14px; vertical-align:top; }
+  .price { font-size:24px; font-weight:bold; color:var(--green); white-space:nowrap; }
+  ol { padding-left:20px; }
+  li { padding-left:5px; margin-bottom:12px; }
+  .sample { border:1px solid var(--line); margin:20px 0 27px; }
+  .sample header { padding:11px 15px; color:var(--green); font-size:13px; font-weight:bold; background:var(--mint); }
+  .sample .content { padding:14px 17px 4px; }
+  .label { color:var(--green); font-size:10px; font-weight:bold; letter-spacing:.1em; text-transform:uppercase; }
+  .small { color:var(--muted); font-size:12px; }
+  .footer-note { position:absolute; left:65px; right:120px; bottom:30px; color:#81948a; border-top:1px solid var(--line); padding-top:9px; font-size:10px; }
+  .links { display:flex; gap:12px; flex-wrap:wrap; margin:14px 0 0; }
+  .links a { color:var(--green); font-size:12px; }
+  @media (max-width:700px) {
+    body { font-size:14px; }
+    .topbar { padding:10px 14px; }
+    .topbar strong { font-size:11px; }
+    .wrap { padding:0; margin:0; }
+    .sheet { min-height:auto; margin:0 0 9px; padding:39px 23px 65px; box-shadow:none; }
+    .sheet:before { height:5px; }
+    .footer-note { left:23px; right:55px; bottom:18px; font-size:9px; }
+    .folio { right:22px; bottom:20px; }
+    h1 { font-size:37px; }
+    h2 { font-size:23px; }
+    .lede { font-size:17px; }
+    .split { grid-template-columns:1fr; gap:9px; }
+    .identity { margin-top:28px; }
+    td { padding:12px 8px; }
+    .price { font-size:19px; }
+  }
+  @media print {
+    @page { size:A4; margin:0; }
+    html,body { background:#fff; print-color-adjust:exact; -webkit-print-color-adjust:exact; font-size:12.3px; }
+    .topbar { display:none; }
+    .wrap { max-width:none; margin:0; padding:0; }
+    .sheet { width:210mm; height:297mm; min-height:0; margin:0; padding:17mm 17mm 15mm; box-shadow:none; page-break-after:always; break-after:page; }
+    .sheet:last-child { page-break-after:auto; break-after:auto; }
+    .sheet:before { height:2mm; }
+    h1 { font-size:39px; }
+    h2 { font-size:22px; }
+    .lede { font-size:17px; }
+    .footer-note { left:17mm; right:28mm; bottom:12mm; }
+    .folio { right:17mm; bottom:12mm; }
+    .sample { break-inside:avoid; }
+  }
+</style>
+</head>
+<body>
+<nav class="topbar"><strong>Edward Mathew · Full application review</strong><a href="RTV-Kiswahili-Full-Application-REVIEW.pdf">Open matching PDF ↗</a></nav>
+<main class="wrap">
+  <section class="sheet" id="cover">
+    <div class="kicker">Individual consultant proposal · 30 September 2026</div>
+    <h1>Words that work<br>where they matter.</h1>
+    <p class="lede">English-to-Kiswahili translation and quality assurance for community learning materials in Tanzania.</p>
+    <div class="rule"></div>
+    <p class="badge">FULL REVIEW PRESENTATION · NOT SUBMITTED</p>
+    <div class="identity"><div><strong>Edward Mathew</strong><span>Tanzanian · Native Kiswahili speaker</span></div><div><span>Prepared for</span><strong>Raising The Village</strong></div></div>
+    <div class="callout"><p><strong>What is in this PDF</strong></p><p>Cover letter, consultant profile, rates, work approach and two original translation examples. The examples still need Edward’s personal language review. Previous professional translation evidence has not been supplied.</p></div>
+    <div class="footer-note">Submission format requested by RTV: one PDF attached to an email after approval.</div><div class="folio">01 / 04</div>
+  </section>
+
+  <section class="sheet" id="letter">
+    <div class="kicker">01 · Cover letter and consultant profile</div>
+    <h2>Proposal for translation services</h2>
+    <p class="address">To: Raising The Village Procurement Team<br>Re: Translation Services 2026 — English to Kiswahili</p>
+    <p>Dear Procurement Team,</p>
+    <p>I am writing to express my interest in providing English-to-Kiswahili translation and machine-translation quality assurance for Raising The Village’s community training materials.</p>
+    <p>I am Tanzanian and a native Kiswahili speaker. I taught English online at Active Age Language Institution in Voronezh, Russia, from June 2022 to May 2024. I also chose to study Russian language and literature. This language background, together with my familiarity with Tanzanian usage, is relevant to making learning materials clear and natural for communities in Tanzania.</p>
+    <p>I would review each source carefully, keep important terms consistent, and check that the final Kiswahili preserves the meaning while remaining understandable to its intended readers. I can deliver editable Word files, track terminology questions, and incorporate consolidated feedback.</p>
+    <p>My proposed rates are <strong>US $0.08 per English source word</strong> for direct translation and <strong>US $0.06 per English source word</strong> for machine-translation quality assurance. The following pages give my approach and two new examples for your assessment.</p>
+    <p>Kind regards,<br><strong>Edward Mathew</strong></p>
+    <h3>Relevant background</h3>
+    <div class="split">
+      <div class="fact"><small>Language</small><strong>Native Kiswahili; English teaching experience</strong></div>
+      <div class="fact"><small>Work</small><strong>Online English Teacher · Active Age Language Institution · 2022–2024</strong></div>
+      <div class="fact"><small>Education</small><strong>Russian Language Certificate · Tambov State University · 2019–2020</strong></div>
+      <div class="fact"><small>Contact</small><strong>Provided in final emailed PDF</strong></div>
+    </div>
+    <p class="small" style="margin-top:14px">Russian literature study is user-reported; the certificate shown in the CV documents Russian language study.</p>
+    <div class="footer-note">Review copy. The final email attachment will carry full contact details and only evidence Edward approves.</div><div class="folio">02 / 04</div>
+  </section>
+
+  <section class="sheet" id="quote">
+    <div class="kicker">02 · Financial quotation and delivery</div>
+    <h2>Clear rates, clear handover.</h2>
+    <p>Rates apply to the English source-word count determined in Microsoft Word or an equivalent tool, with punctuation excluded, as set out in RTV’s terms.</p>
+    <table><thead><tr><th>Service</th><th>Per English source word</th></tr></thead><tbody>
+      <tr><td><strong>Direct translation</strong><br>English to Kiswahili, including self-review and one round of consolidated feedback.</td><td class="price">US $0.08</td></tr>
+      <tr><td><strong>Machine-translation quality assurance</strong><br>Review against the English source and correct to publication-ready Kiswahili, including one round of consolidated feedback.</td><td class="price">US $0.06</td></tr>
+    </tbody></table>
+    <h3>Quality assurance process</h3>
+    <ol>
+      <li>Agree the intended audience, source files, terminology and work-order scope with RTV.</li>
+      <li>Translate or review against the English source, adapting literal wording where it would be unclear in Tanzanian Kiswahili.</li>
+      <li>Check consistency, grammar, names, numbers, completeness and layout; read the finished text for natural flow.</li>
+      <li>Deliver editable Word documents, note unresolved terminology questions in a tracker where requested, and incorporate consolidated feedback.</li>
+    </ol>
+    <div class="callout"><p><strong>Schedule and confidentiality</strong></p><p>I can plan around the TOR’s four-week translation and two-week quality-assurance windows, with volume and milestones agreed in each accepted work order. RTV materials would be used only for the assignment and treated as confidential.</p></div>
+    <p class="small">This is a call-down contract: work is undertaken only after RTV issues a work order and the consultant accepts it. RTV does not guarantee a minimum volume.</p>
+    <div class="footer-note">Rates selected by Edward Mathew for this proposal, not prices published by RTV.</div><div class="folio">03 / 04</div>
+  </section>
+
+  <section class="sheet" id="samples">
+    <div class="kicker">03 · Translation examples</div>
+    <h2>Community language in practice.</h2>
+    <p class="small">These are original practice examples prepared for this application. They are not previous client commissions. Edward must review the Kiswahili before they are used in a final bid.</p>
+    <div class="sample"><header>Example 01 · Community savings records</header><div class="content"><div class="label">English source</div><p>A savings group should record every contribution on the day it is received. At the end of each meeting, members should check the total together and agree on any corrections before closing the record.</p><div class="label">Draft Kiswahili</div><p>Kikundi cha akiba kinapaswa kurekodi kila mchango siku unapopokelewa. Mwishoni mwa kila mkutano, wanachama wanapaswa kukagua jumla kwa pamoja na kukubaliana kuhusu marekebisho yoyote kabla ya kufunga kumbukumbu.</p></div></div>
+    <div class="sample"><header>Example 02 · Farming and market decisions</header><div class="content"><div class="label">English source</div><p>Before choosing a crop to sell, farmers should compare expected demand, transport costs and the prices offered by different buyers. A higher selling price does not always mean a higher profit.</p><div class="label">Draft Kiswahili</div><p>Kabla ya kuchagua zao la kuuza, wakulima wanapaswa kulinganisha mahitaji yanayotarajiwa, gharama za usafirishaji na bei zinazotolewa na wanunuzi mbalimbali. Bei ya juu ya kuuza haimaanishi kila mara faida kubwa zaidi.</p></div></div>
+    <div class="callout"><p><strong>Evidence still needed</strong></p><p>RTV lists proof of professional English-to-Kiswahili translation experience as mandatory and asks for at least two similar references or samples. These new examples show proposed language work; they do not establish previous professional translation experience. Relevant previous assignments or references can be added if available.</p></div>
+    <div class="footer-note">Review copy for Edward Mathew. No application has been emailed to Raising The Village.</div><div class="folio">04 / 04</div>
+  </section>
+</main>
+</body>
+</html>
